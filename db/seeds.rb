@@ -34,3 +34,17 @@ end
 		description: Faker::HarryPotter.quote
 		})
 end
+
+3.times do
+	Education.create({
+		school: Faker::Educator.university,
+		person: becca,
+		degree: Faker::Name.suffix,
+		concentration: Faker::Commerce.department,
+		start_date: Faker::Date.backward(1000),
+		end_date: Faker::Date.backward(100),
+		advisors: "#{Faker::GameOfThrones.character}, #{Faker::GameOfThrones.character}, #{Faker::GameOfThrones.character}",
+		honors: "#{Faker::GameOfThrones.dragon}, #{Faker::GameOfThrones.dragon}",
+		extracurriculars: Faker::Team.sport
+		})
+end
