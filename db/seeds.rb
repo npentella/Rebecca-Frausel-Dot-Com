@@ -6,4 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Person.create({name: "Rebecca Frausel", title: "PhD Candidate, Univ. of Chicago"})
+Person.create(
+	{name: "Rebecca Frausel, M.A.",
+		title: "PhD Candidate, Univ. of Chicago",
+		main_description: Faker::HarryPotter.quote,
+		personal_bio: Faker::HarryPotter.quote,
+		teaching_philosophy: Faker::HarryPotter.quote
+		})
