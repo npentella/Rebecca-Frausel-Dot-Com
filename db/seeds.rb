@@ -28,7 +28,7 @@ becca = Person.find(1)
 
 5.times do
 	Publication.create({
-		title: Faker::HarryPotter,
+		title: Faker::HarryPotter.book,
 		person: becca,
 		collaborators: "#{Faker::HarryPotter.character}, #{Faker::HarryPotter.character}",
 		location: Faker::HarryPotter.location,
