@@ -48,3 +48,12 @@ end
 		extracurriculars: Faker::Team.sport
 		})
 end
+
+3.times do
+	Teaching.create({
+		person: becca,
+		subject: Faker::Commerce.department,
+		school: Faker::GameOfThrones.city,
+		description: Faker::HarryPotter.quote
+		})
+end
